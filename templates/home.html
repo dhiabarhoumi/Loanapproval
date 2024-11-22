@@ -1,0 +1,108 @@
+<html>
+<body>
+    <div class="login">
+        <h1>Loan Approval</h1>
+
+        <form action="{{ url_for('predict_datapoint') }}" method="post">
+            <legend>Loan Approval</legend>
+            <!-- Age -->
+            <div class="mb-3">
+                <label class="form-label">Age</label>
+                <input class="form-control" type="number" name="person_age" placeholder="Enter your Age" required min="18" />
+            </div>
+            <!-- Gender -->
+            <div class="mb-3">
+                <label class="form-label">Gender</label>
+                <select class="form-control" name="person_gender" required>
+                    <option class="placeholder" selected disabled value="">Select your Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <!-- Education -->
+            <div class="mb-3">
+                <label class="form-label">Education Level</label>
+                <select class="form-control" name="person_education" required>
+                    <option class="placeholder" selected disabled value="">Select your Education Level</option>
+                    <option value="Bachelor">Bachelor</option>
+                    <option value="Associate">Associate</option>
+                    <option value="High School">High School</option>
+                    <option value="Master">Master</option>
+                </select>
+            </div>
+            <!-- Income -->
+            <div class="mb-3">
+                <label class="form-label">Annual Income</label>
+                <input class="form-control" type="number" name="person_income" placeholder="Enter your Annual Income" required />
+            </div>
+            <!-- Employment Experience -->
+            <div class="mb-3">
+                <label class="form-label">Years of Employment</label>
+                <input class="form-control" type="number" name="person_emp_exp" placeholder="Enter your Employment Experience (years)" required min="0" />
+            </div>
+            <!-- Home Ownership -->
+            <div class="mb-3">
+                <label class="form-label">Home Ownership</label>
+                <select class="form-control" name="person_home_ownership" required>
+                    <option class="placeholder" selected disabled value="">Select Home Ownership Status</option>
+                    <option value="RENT">RENT</option>
+                    <option value="MORTGAGE">MORTGAGE</option>
+                    <option value="OWN">OWN</option>
+                    <option value="OTHER">OTHER</option>
+                </select>
+            </div>
+            <!-- Loan Amount -->
+            <div class="mb-3">
+                <label class="form-label">Loan Amount</label>
+                <input class="form-control" type="number" name="loan_amnt" placeholder="Enter Loan Amount" required />
+            </div>
+            <!-- Loan Intent -->
+            <div class="mb-3">
+                <label class="form-label">Loan Intent</label>
+                <select class="form-control" name="loan_intent" required>
+                    <option class="placeholder" selected disabled value="">Select Loan Intent</option>
+                    <option value="EDUCATION">EDUCATION</option>
+                    <option value="MEDICAL">MEDICAL</option>
+                    <option value="VENTURE">VENTURE</option>
+                    <option value="PERSONAL">PERSONAL</option>
+                    <option value="DEBTCONSOLIDATION">DEBT CONSOLIDATION</option>
+                </select>
+            </div>
+            <!-- Loan Interest Rate -->
+            <div class="mb-3">
+                <label class="form-label">Loan Interest Rate (%)</label>
+                <input class="form-control" type="number" name="loan_int_rate" placeholder="Enter Loan Interest Rate" step="0.01" required />
+            </div>
+            <!-- Loan Percent Income -->
+            <div class="mb-3">
+                <label class="form-label">Loan Percent of Income (%)</label>
+                <input class="form-control" type="number" name="loan_percent_income" placeholder="Enter Loan Percent of Income" step="0.01" required />
+            </div>
+            <!-- Credit History Length -->
+            <div class="mb-3">
+                <label class="form-label">Credit History Length (Years)</label>
+                <input class="form-control" type="number" name="cb_person_cred_hist_length" placeholder="Enter Credit History Length" required min="0" />
+            </div>
+            <!-- Credit Score -->
+            <div class="mb-3">
+                <label class="form-label">Credit Score</label>
+                <input class="form-control" type="number" name="credit_score" placeholder="Enter Credit Score" required min="300" max="850" />
+            </div>
+            <!-- Previous Loan Defaults -->
+            <div class="mb-3">
+                <label class="form-label">Previous Loan Defaults</label>
+                <select class="form-control" name="previous_loan_defaults_on_file" required>
+                    <option class="placeholder" selected disabled value="">Have Previous Loan Defaults?</option>
+                    <option value="TRUE">TRUE</option>
+                    <option value="FALSE">FALSE</option>
+                </select>
+            </div>
+            <!-- Submit -->
+            <div class="mb-3">
+                <input class="btn btn-primary" type="submit" value="Check Loan Approval" />
+            </div>
+        </form>
+        <h2>The prediction is: {{ results }}</h2>
+    </div>
+</body>
+</html>
