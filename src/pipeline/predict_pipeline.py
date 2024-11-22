@@ -60,7 +60,7 @@ class CustomData:
 
         self.loan_int_rate= loan_int_rate
 
-        self.loan_percent_income=loan_percent_income
+        self.loan_percent_income=loan_percent_income/100
 
         self.cb_person_cred_hist_length= cb_person_cred_hist_length
 
