@@ -49,28 +49,28 @@ class ModelTrainer:
             }
             params={
                 "Decision Tree": {
-                    'criterion':['squared_error', 'friedman_mse', 'absolute_error', 'poisson'],
-                    # 'splitter':['best','random'],
-                    # 'max_features':['sqrt','log2'],
+                    'criterion':['gini', 'entropy', 'log_loss'],
+                    'splitter':['best','random'],
+                    'max_features':['sqrt','log2'],
                 },
                 "Random Forest":{
-                    # 'criterion':['squared_error', 'friedman_mse', 'absolute_error', 'poisson'],
-                 
-                    # 'max_features':['sqrt','log2',None],
+                    'criterion':['gini', 'entropy', 'log_loss'],
+                    'max_features':['sqrt','log2'],
                     'n_estimators': [8,16,32,64,128,256]
                 },
                 "Gradient Boosting":{
-                    # 'loss':['squared_error', 'huber', 'absolute_error', 'quantile'],
+                    'loss':['log_loss', 'deviance', 'exponential'],
                     'learning_rate':[.1,.01,.05,.001],
                     'subsample':[0.6,0.7,0.75,0.8,0.85,0.9],
-                    # 'criterion':['squared_error', 'friedman_mse'],
-                    # 'max_features':['auto','sqrt','log2'],
+                    'criterion':['squared_error', 'friedman_mse'],
                     'n_estimators': [8,16,32,64,128,256]
                 },
-                "Logistic Regression":{},
+                "Logistic Regression":{
+                    'penalty':['l1', 'l2', 'elasticnet'],
+                    'solver':['lbfgs', 'liblinear', 'newton-cg', 'newton-cholesky', 'sag', 'saga'],
+                    'multi_class': ['auto', 'ovr', 'multinomial']},
+                
                 "XGBclassifier":{
-                    'learning_rate':[.1,.01,.05,.001],
-                    'n_estimators': [8,16,32,64,128,256]
                 },
                 "CatBoosting classifier":{
                     'depth': [6,8,10],
@@ -79,12 +79,12 @@ class ModelTrainer:
                 },
                 "AdaBoost classifier":{
                     'learning_rate':[.1,.01,0.5,.001],
-                    # 'loss':['linear','square','exponential'],
                     'n_estimators': [8,16,32,64,128,256]
                 },
                 "kneighbours classifier":{
                     'algorithm':['auto', 'ball_tree', 'kd_tree', 'brute'],
-                    'weights': ['uniform', 'distance']
+                    'weights': ['uniform', 'distance'],
+                    'leaf_size': [8,16,32,64,128,256]
             
                 }
                 
