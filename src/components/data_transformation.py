@@ -28,7 +28,8 @@ class DataTransformation:
         
         '''
         try:
-            numerical_columns = ["person_age", "person_income","person_emp_exp","loan_amnt","loan_int_rate","loan_percent_income","cb_person_cred_hist_length","credit_score"]
+            numerical_columns = ["person_age", "person_income","person_emp_exp","loan_amnt","loan_int_rate",
+                                 "loan_percent_income","cb_person_cred_hist_length","credit_score"]
             categorical_columns = [
                 "person_gender",
                 "person_education",
