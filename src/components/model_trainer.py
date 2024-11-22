@@ -44,8 +44,8 @@ class ModelTrainer:
                 "Logistic Regression": LogisticRegression(),
                 "XGBclassifier": XGBClassifier(),
                 "CatBoosting classifier": CatBoostClassifier(verbose=False),
-                "AdaBoost classifier": AdaBoostClassifier(),
-                "kneighbours":KNeighborsClassifier()
+                "AdaBoost classifier": AdaBoostClassifier()
+                
             }
             params={
                 "Decision Tree": {
@@ -80,13 +80,8 @@ class ModelTrainer:
                 "AdaBoost classifier":{
                     'learning_rate':[.1,.01,0.5,.001],
                     'n_estimators': [8,16,32,64,128,256]
-                },
-                "kneighbours classifier":{
-                    'algorithm':['auto', 'ball_tree', 'kd_tree', 'brute'],
-                    'weights': ['uniform', 'distance'],
-                    'leaf_size': [8,16,32,64,128,256]
-            
                 }
+                
                 
             }
 
