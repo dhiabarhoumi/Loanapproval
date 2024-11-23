@@ -55,4 +55,72 @@ Welcome to the Loan Approval System, an end-to-end machine learning application 
 ---
 
 ## 📂 Project Structure
+loan-approval-system/ │ ├── app/ │ ├── templates/ # HTML and Bootstrap files │ ├── static/ # Static assets (CSS, JS) │ └── main.py # Flask application │ ├── pipeline/ │ ├── data_ingestion.py # Data ingestion pipeline │ ├── data_transformation.py # Data transformation pipeline │ ├── model_training.py # Model training pipeline │ └── prediction.py # Prediction pipeline │ ├── utils/ │ ├── logger.py # Logging utilities │ ├── custom_exceptions.py # Exception handling utilities │ └── helpers.py # Utility functions (load_object, save_object) │ ├── tests/ # Unit tests for pipelines and utils ├── requirements.txt # Dependencies └── README.md # Project overview
+
+
+---
+
+## 🛠️ How to Use
+
+1. **Clone the Repository**  
+   ```bash
+   git clone https://github.com/your-username/loan-approval-system.git
+   cd loan-approval-system
+2. **Install Dependencies**
+
+   ```bash
+    pip install -r requirements.txt
+3. **Run Locally**
+
+   ```bash
+    python app.py
+4. **Access the Application**
+Open your browser and navigate to:
+http://localhost:5000
+
+---
+
+## 🧪 CI/CD Workflow
+
+This project integrates GitHub Actions for continuous integration and deployment:
+- **Build**: Ensures dependencies and the application structure are correct.
+- **Test**: Automatically runs all test cases.
+- **Deploy**: Deploys the latest changes to **Microsoft Azure**.
+
+The `.github/workflows` folder contains the YAML files defining the CI/CD pipeline.
+
+---
+
+## 📸 Screenshots
+
+Add the following images to a `screenshots/` directory in your repository and reference them in the README:
+
+1. **Home Page**
+   ![Home Page](screenshots/home_page.png)  
+   *This screenshot displays the application's home page with the input form for loan details.*
+
+2. **Prediction Result**
+   ![Prediction Result](screenshots/prediction_result.png)  
+   *This screenshot shows the results page with the loan approval decision.*
+
+---
+
+## 🤝 Connect & Contribute
+
+This project is open for contributions! Contributions, issues, and feature requests are welcome.  
+
+---
+
+## 📧 Contact
+
+If you have any questions or feedback, feel free to reach out:
+
+- **Name**: Dhieddine Barhoumi  
+- **Portfolio**: [dhieddinebarhoumi.me](https://dhieddinebarhoumi.me)  
+- **Email**: [dhiabarhoumi2608@gmail.com](mailto:dhiabarhoumi2608@gmail.com)  
+- **LinkedIn**: [linkedin.com/in/barhoumi-dhieddine/](https://www.linkedin.com/in/barhoumi-dhieddine/)
+- 
+I’m open to discussions, collaborations, and new opportunities!
+
+
 
