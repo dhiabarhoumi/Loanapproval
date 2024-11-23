@@ -88,11 +88,11 @@ The `.github/workflows` folder contains the YAML files defining the CI/CD pipeli
 ## 📸 Screenshots
 
 1. **Home Page**
-   ![Home Page](screenshots/home_page.png)  
+   ![Home Page](screenshots/home.png)  
    *This screenshot displays the application's home page with the input form for loan details.*
 
 2. **Prediction Result**
-   ![Prediction Result](screenshots/prediction_result.png)  
+   ![Prediction Result](screenshots/result.png)  
    *This screenshot shows the results page with the loan approval decision.*
 
 ---
