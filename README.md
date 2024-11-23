@@ -1,4 +1,4 @@
-# Loan Approval System: End-to-End Machine Learning Application 🚀
+# Loan Approval System: End-to-End Machine Learning Application 
 
 ![Azure Deployment](https://img.shields.io/badge/Deployed%20on-Microsoft%20Azure-blue?style=flat-square)
 ![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-brightgreen?style=flat-square)
