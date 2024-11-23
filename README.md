@@ -8,7 +8,7 @@ Welcome to the Loan Approval System, an end-to-end machine learning application 
 
 ---
 
-## 🚀 Features
+##  Features
 
 ### 🛠️ **End-to-End ML Pipeline**
 - **Data Ingestion**: Handles input data efficiently and ensures robust preprocessing.
@@ -54,18 +54,12 @@ Welcome to the Loan Approval System, an end-to-end machine learning application 
 
 ---
 
-## 📂 Project Structure
-loan-approval-system/ │ ├── app/ │ ├── templates/ # HTML and Bootstrap files │ ├── static/ # Static assets (CSS, JS) │ └── main.py # Flask application │ ├── pipeline/ │ ├── data_ingestion.py # Data ingestion pipeline │ ├── data_transformation.py # Data transformation pipeline │ ├── model_training.py # Model training pipeline │ └── prediction.py # Prediction pipeline │ ├── utils/ │ ├── logger.py # Logging utilities │ ├── custom_exceptions.py # Exception handling utilities │ └── helpers.py # Utility functions (load_object, save_object) │ ├── tests/ # Unit tests for pipelines and utils ├── requirements.txt # Dependencies └── README.md # Project overview
-
-
----
-
 ## 🛠️ How to Use
 
 1. **Clone the Repository**  
    ```bash
-   git clone https://github.com/your-username/loan-approval-system.git
-   cd loan-approval-system
+   git clone https://github.com/dhiabarhoumi/loanapproval.git
+   cd loanapproval
 2. **Install Dependencies**
 
    ```bash
@@ -92,8 +86,6 @@ The `.github/workflows` folder contains the YAML files defining the CI/CD pipeli
 ---
 
 ## 📸 Screenshots
-
-Add the following images to a `screenshots/` directory in your repository and reference them in the README:
 
 1. **Home Page**
    ![Home Page](screenshots/home_page.png)  
