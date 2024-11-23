@@ -34,20 +34,20 @@ jobs:
         file: ./Dockerfile
 
   deploy:
-  runs-on: ubuntu-latest
-  needs: build
-  environment:
-    name: production
-    url: https://loanapproval.azurewebsites.net  # Replace with your app's actual URL
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: production
+      url: https://loanapproval.azurewebsites.net  # Replace with your app's actual URL
 
-  steps:
-    - name: Deploy to Azure Web App
-      id: deploy-to-webapp
-      uses: azure/webapps-deploy@v3
-      with:
-        app-name: 'loanapprovalplatform'
-        slot-name: 'production'
-        publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-        images: |
-          loanapproval.azurecr.io/loanapproval:latest
+    steps:
+      - name: Deploy to Azure Web App
+        id: deploy-to-webapp
+        uses: azure/webapps-deploy@v3
+        with:
+          app-name: 'loanapprovalplatform'
+          slot-name: 'production'
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+          images: |
+            loanapproval.azurecr.io/loanapproval:latest
 
