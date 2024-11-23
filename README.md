@@ -111,7 +111,6 @@ If you have any questions or feedback, feel free to reach out:
 - **Portfolio**: [dhieddinebarhoumi.me](https://dhieddinebarhoumi.me)  
 - **Email**: [dhiabarhoumi2608@gmail.com](mailto:dhiabarhoumi2608@gmail.com)  
 - **LinkedIn**: [linkedin.com/in/barhoumi-dhieddine/](https://www.linkedin.com/in/barhoumi-dhieddine/)
-- 
 I’m open to discussions, collaborations, and new opportunities!
 
 
